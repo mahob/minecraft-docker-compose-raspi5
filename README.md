@@ -4,7 +4,7 @@ Big thanks to https://github.com/mtoensing for provideing the installtion script
 
 https://github.com/mtoensing/RaspberryPiMinecraft
 
-I addes some systemd unit files to start and stop the minecraft service. Just copy them to `/etc/systemd/system/` and enable them:
+I added some systemd unit files to start and stop the minecraft service. Just copy them to `/etc/systemd/system/` and enable them:
 
 ```bash
 cp ./etc/* /etc/systemd/system/
