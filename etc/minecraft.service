@@ -1,0 +1,14 @@
+[Unit]
+Description=Docker Compose Minecraft Service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/david/minecraft
+ExecStart=/home/david/minecraft/minecraft.sh -f /home/david/minecraft/minecraft.yml up -d
+ExecStop=/home/david/minecraft/minecraft.sh down
+
+[Install]
+WantedBy=multi-user.target

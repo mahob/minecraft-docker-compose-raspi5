@@ -1,0 +1,6 @@
+[Unit]
+Description=Stop Minecraft Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl stop minecraft.service

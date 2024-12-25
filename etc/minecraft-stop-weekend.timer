@@ -1,0 +1,9 @@
+[Unit]
+Description=Stop Minecraft Service on Weekends
+
+[Timer]
+OnCalendar=Fri..Sat 23:15
+Unit=minecraft-stop.service
+
+[Install]
+WantedBy=timers.target

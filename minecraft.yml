@@ -1,0 +1,11 @@
+services:
+  minecraft:
+    image: marctv/minecraft-papermc-server:1.21.4
+    environment:
+      - MEMORYSIZE:'1G'
+      - PAPAERMCFLAGS:''
+    volumes:
+      - "./docker-volumes/mcserver:/data:rw"
+    ports:
+      - 25565:25565
+
